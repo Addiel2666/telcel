@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "97404251-f814-474b-bba2-4c9f08d32b43",
+		"name": "telcel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Guardar persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Addiel\",\r\n    \"apePaterno\":\"HErandez\",\r\n    \"apeMaterno\":\"Polvo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/linea/persona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linea",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guartda Linea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroTelefonico\":\"5516405341\",\r\n    \"sms\":\"1\",\r\n    \"llamadas\":\"1\",\r\n    \"facebook\":\"0\",\r\n    \"whatsapp\":\"1\",\r\n    \"persona\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/linea/telcel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linea",
+						"telcel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Persona",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero\":\"5516405341\",\r\n    \"nombre\":\"A\",\r\n    \"apellidoPaterno\":\"B\",\r\n    \"apellidoMaterno\":\"F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/linea/persona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linea",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete linea",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroTelefonico\":\"5516405341\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/linea/telcel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linea",
+						"telcel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
